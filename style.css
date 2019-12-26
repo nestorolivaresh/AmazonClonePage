@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 0.75rem;
+  background: rgba(76, 148, 255, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(76, 148, 255, 1) 0%,
+    rgba(76, 148, 255, 1) 31%,
+    rgba(237, 237, 237, 1) 38%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(76, 148, 255, 1)),
+    color-stop(31%, rgba(76, 148, 255, 1)),
+    color-stop(38%, rgba(237, 237, 237, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(76, 148, 255, 1) 0%,
+    rgba(76, 148, 255, 1) 31%,
+    rgba(237, 237, 237, 1) 38%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(76, 148, 255, 1) 0%,
+    rgba(76, 148, 255, 1) 31%,
+    rgba(237, 237, 237, 1) 38%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(76, 148, 255, 1) 0%,
+    rgba(76, 148, 255, 1) 31%,
+    rgba(237, 237, 237, 1) 38%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 148, 255, 1) 0%,
+    rgba(76, 148, 255, 1) 31%,
+    rgba(237, 237, 237, 1) 38%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c94ff', endColorstr='#ededed', GradientType=0 );
+  height: auto;
+}
+
+img {
+  cursor: pointer;
+}
+
+.header1 {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  background-color: #232f3e;
+  color: #ccc;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.searchBar {
+  padding-left: 3.6rem;
+}
+
+.searchBar > input {
+  width: 39.8rem;
+  height: 35px;
+  float: left;
+}
+.carrito {
+  padding-top: 1px;
+}
+
+.pedidos {
+  padding-top: 15px;
+}
+
+.searchBar > a {
+  box-sizing: border-box;
+  float: left;
+  font-size: 0.75rem;
+  height: 35px;
+  width: 65px;
+  border: 1px solid rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-decoration: none;
+  color: #232f3e;
+  padding: 0.6rem 0rem 0rem 0.63rem;
+}
+
+.fa-search {
+  padding: 10px 0px 0px 15px;
+  background-color: rgb(255, 189, 89);
+  height: 25px;
+  width: 35px;
+  color: #232f3e;
+  font-size: 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.fa-shopping-cart {
+  font-size: 30px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.amazonLOGO {
+  width: 6.5rem;
+  align-self: center;
+  padding-left: 0.7rem;
+}
+
+.boldText {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.navBar {
+  background-color: #232f3e;
+  height: 40px;
+  display: flex;
+}
+
+.locationLogo,
+.locationText {
+  padding-top: 0.2rem;
+  cursor: pointer;
+}
+
+.fa-chevron-down,
+.pedidos,
+.carrito {
+  cursor: pointer;
+}
+
+nav p {
+  padding-left: 0.3rem;
+}
+
+.fa-map-marker-alt {
+  font-size: 1.2rem;
+  color: #fff;
+  padding-left: 0.9rem;
+  padding-top: 0.5rem;
+}
+.navText1 {
+  font-size: 0.75rem;
+  color: #fff;
+  padding-top: 0.3;
+}
+
+.navText2 {
+  font-size: 0.88rem;
+  color: #fff;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.nav-bar a,
+.menuFont {
+  width: 100%;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.85rem;
+  text-align: end;
+}
+.nav-bar ul {
+  display: table-cell;
+  list-style: none;
+  position: absolute;
+  padding-left: 5.8rem;
+}
+
+.nav-bar ul li {
+  float: left;
+  padding-left: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.fa-chevron-down.cat {
+  font-size: 0.6rem;
+  padding-left: 0.2rem;
+  margin-right: 1.2rem;
+}
+
+.showcase {
+  background: url("./images/showcase.jpg") no-repeat, center/cover;
+  height: 100%;
+  position: relative;
+}
+
+.fa-chevron-right.show {
+  font-size: 3rem;
+  right: 1.5rem;
+  top: 6.3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.fa-chevron-left.show {
+  font-size: 3rem;
+  left: 1.5rem;
+  top: 6.3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.wrapperShow {
+  display: flex;
+  padding: 16rem 1.3rem 0rem 1.3rem;
+  justify-content: space-between;
+}
+
+.showcaseContent {
+  background: #fff;
+  flex-basis: 20%;
+  height: 23rem;
+  padding: 1.5rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.boxTitle {
+  font-size: 1.3rem;
+  display: block;
+  color: #000;
+  padding-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+#cellphone,
+#ofertas,
+#penguin {
+  display: block;
+  width: 100%;
+}
+
+.caption1 {
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+  line-height: 1.25;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  max-width: 100%;
+  padding: 0.1rem;
+  overflow: hidden;
+}
+
+#pc,
+#ps4,
+#toys,
+#baby {
+  width: 100%;
+}
+
+#ps4,
+#pc {
+  height: 6rem;
+}
+
+#baby,
+#toys {
+  height: 6.2rem;
+}
+
+.linkBox {
+  text-decoration: none;
+  position: absolute;
+  bottom: 1rem;
+  color: #0066c0;
+  font-size: 0.8rem;
+}
+
+.buttonIniciar {
+  width: auto;
+  background: #ffdb81;
+  border-radius: 0.25rem;
+  border: solid 0.031rem #000;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  line-height: 29px;
+  display: block;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.buttonIniciar:hover {
+  background: #ffce53;
+}
+
+.productSection {
+  background-image: #fff;
+  height: auto;
+  overflow: hidden;
+}
+
+.sectionBar {
+  margin: 1.3rem 1.3rem 0rem 1.3rem;
+  width: auto;
+  height: auto;
+  background: #fff;
+}
+
+.sectionTitle {
+  background: #fff;
+  height: 3rem;
+  position: relative;
+}
+
+p.boxTitle2 {
+  font-size: 1.35rem;
+  color: #444;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+}
+
+a.sectionLink {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 18rem;
+}
+
+.sectionImages {
+  overflow: hidden;
+  background: #fff;
+  width: 76rem;
+  position: relative;
+  top: 0rem;
+  margin-left: 1.2rem;
+  height: auto;
+}
+
+.sectionImages > img,
+.historialImgs > img {
+  max-width: 17rem;
+  padding: 1.2rem 0.5rem 1rem 0.5rem;
+  vertical-align: top;
+}
+
+#something1,
+#something2 {
+  margin: 0 auto;
+  vertical-align: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#backpack {
+  width: 12rem;
+  bottom: 0.5rem;
+}
+
+#backpack,
+#headphones {
+  height: 12rem;
+  white-space: nowrap;
+  position: absolute;
+  right: -6.4rem;
+}
+
+#charger {
+  padding: 0.5rem 4rem 0 4rem;
+}
+
+#speakers {
+  padding-top: 4rem;
+}
+
+#something2 {
+  width: 15rem;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 3rem;
+  background: #fff;
+  height: 6rem;
+  width: 2.6rem;
+}
+
+.arrowRight {
+  right: 0rem;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.arrowLeft {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  opacity: 0.7;
+  border-top: 0.5px rgb(221, 221, 221) solid;
+  border-right: 0.5px rgb(221, 221, 221) solid;
+  border-bottom: 0.5px rgb(221, 221, 221) solid;
+}
+
+.fas.fa-chevron-right.products,
+.fas.fa-chevron-left.products {
+  position: absolute;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #444;
+  top: 2rem;
+}
+
+.fas.fa-chevron-right.products {
+  right: 0.4rem;
+}
+
+.fas.fa-chevron-left.products {
+  left: 0.7rem;
+}
+
+.historial {
+  background: #fff;
+  margin-top: 1.5rem;
+  height: auto;
+  width: auto;
+  padding-bottom: 2.3rem;
+}
+
+.historialHeader {
+  border-bottom: 1px solid #ccc;
+  height: 3.5rem;
+}
+
+.busqueda {
+  width: 22rem;
+  text-align: center;
+  display: inline-block;
+  transform: translate(133%, 20%);
+}
+
+.boxTitle3 {
+  font-size: 1.25rem;
+  color: #444;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.historialImgs {
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+.historialImgs > img {
+  height: 12rem;
+  width: auto;
+}
+
+.goHome {
+  text-align: center;
+  background: #2e3e52;
+  padding: 15px 0;
+  line-height: 19px;
+  font-size: 13.5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.goHome:hover {
+  background: #3d536d;
+}
+
+.bottomMenu {
+  background: #232f3e;
+  border-bottom: 1px solid #848688;
+}
+
+.bottomList {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 6rem;
+}
+
+.conocenos,
+.money,
+.pago,
+.ayuda {
+  padding: 2.5rem 0;
+  display: flex;
+}
+
+.conocenos {
+  width: 2rem;
+}
+
+.money {
+  padding-left: 2rem;
+}
+
+.pago {
+  width: 12rem;
+}
+
+.ayuda {
+  width: 9rem;
+}
+
+.bottomList ul {
+  list-style: none;
+}
+
+.bottomList ul li {
+  padding-bottom: 0.63rem;
+}
+
+.bottomList .boldText {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.fa-chevron-right.menu {
+  font-size: 0.5rem;
+}
+
+.menuFont:hover {
+  text-decoration-line: underline;
+}
+
+.sectionEnd {
+  background: #232f3e;
+  position: relative;
+  height: 6.5rem;
+}
+
+.sectionEnd > div {
+  position: relative;
+  border: 1px solid #848688;
+  border-radius: 0.25rem;
+  color: #ccc;
+  text-align: left;
+  font-size: 0.85rem;
+  padding: 0.55rem;
+  height: 1rem;
+  cursor: pointer;
+}
+.logoBottom {
+  width: 5rem;
+  align-self: center;
+  padding-left: 0.7rem;
+  position: absolute;
+  top: 34%;
+  left: 23.8%;
+  cursor: pointer;
+}
+
+.idioma {
+  top: 27%;
+  left: 37%;
+  width: 6.8rem;
+}
+
+.moneda {
+  bottom: 7%;
+  left: 47.5%;
+  width: 12.5rem;
+}
+
+.pais {
+  bottom: 41%;
+  left: 64.8%;
+  width: 8.5rem;
+}
+
+.fa-sort {
+  float: right;
+  vertical-align: middle;
+}
+
+.footer1 {
+  background-color: #131a22;
+  width: auto;
+  height: auto;
+  padding: 1.1rem 12rem 1.1rem 10rem;
+}
+
+.footerOption {
+  text-align: left;
+  align-items: initial;
+  height: 5rem;
+  width: 100%;
+}
+
+.footerOption .boldText {
+  font-size: 0.7rem;
+  padding: 0;
+  height: auto;
+  width: auto;
+  color: #ccc !important;
+  line-height: 110%;
+}
+
+.footerOption .menuFont {
+  font-size: 0.63rem;
+  text-align: left;
+  padding: 0;
+  height: auto;
+  color: #999 !important;
+  font-weight: none !important;
+  line-height: 110%;
+}
+
+td:hover {
+  text-decoration-line: underline;
+}
+
+td {
+  vertical-align: initial;
+  width: 4%;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  box-sizing: content-box;
+}
+
+.footerEnd {
+  background-color: #131a22;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0 1.4rem 0;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper {
+  background-color: #131a22;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 17%;
+  top: 50%;
+}
+.footerEnd ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.footerList {
+  float: left;
+  padding: 0 0.5rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #ddd;
+  line-height: 1.5rem;
+}
